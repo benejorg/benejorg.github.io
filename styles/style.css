@@ -2,10 +2,13 @@
 
 :root {
   --mint: #10ac84;
+  --light-green: #f1f8fa;
 }
 
 * {
   font-family: "Poppins", sans-serif;
+  color: #222f3e;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -30,7 +33,7 @@ h1 {
   margin-bottom: 5px;
 }
 
-.hero button {
+.button-mint {
   background-color: var(--mint);
   border: 2px solid var(--mint);
   padding: 10px 15px;
@@ -40,9 +43,82 @@ h1 {
   transition: all 250ms ease-in-out;
 }
 
-.hero button:hover {
+.button-mint:hover {
   background: transparent;
   transform: scale(1.05);
   color: var(--mint);
   cursor: pointer;
+  border: 2px solid var(--mint);
+}
+
+.my-work p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+.my-work button {
+  background: transparent;
+  border: 2px solid var(--mint);
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin-top: 45px;
+  color: var(--mint);
+  transition: all 250ms ease-in-out;
+}
+
+.my-work button:hover {
+  background-color: var(--mint);
+  color: white;
+}
+
+.work-inquiry {
+  background-color: var(--light-green);
+  border-radius: 4px;
+  padding: 30px 120px;
+  height: 15vh;
+}
+
+.work-inquiry h2,
+p {
+  margin: 0;
+}
+
+.email-link {
+  color: var(--mint);
+}
+
+.email-link:hover {
+  text-decoration: none;
+}
+
+.socials a {
+  color: #222f3e;
+  transition: all 200ms ease-in-out;
+  font-size: 26px;
+}
+
+.fa-github:hover {
+  color: var(--mint) !important;
+}
+
+@media (max-width: 768px) {
+  .my-work {
+    text-align: center;
+  }
+  .my-work img {
+    display: none;
+  }
+
+  .my-work button {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .my-work h3,
+  p,
+  button {
+    text-align: center;
+  }
 }
