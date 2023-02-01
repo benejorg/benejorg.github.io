@@ -78,10 +78,10 @@ p {
   padding-left: 30px;
 }
 
-.about {
+.content-container {
   padding: 160px 50px;
 }
-.about-content {
+.content {
   margin: 30px;
 }
 
@@ -89,6 +89,11 @@ p {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.check-out {
+  font-size: 42px;
+  margin-bottom: 100px;
 }
 
 @media (max-width: 768px) {
