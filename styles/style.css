@@ -17,14 +17,18 @@ h1 {
   margin-bottom: 30px;
 }
 
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+}
+
+img {
+  border-radius: 6px;
+}
+
 .hero {
   background-color: #f1f8fa;
   height: 40vh;
-}
-
-.hero h2 {
-  font-size: 26px;
-  font-weight: 400;
 }
 
 .hero p {
@@ -103,6 +107,13 @@ p {
   color: var(--mint) !important;
 }
 
+.about {
+  background-color: var(--light-green);
+}
+.about-content {
+  margin: 200px 100px;
+}
+
 @media (max-width: 768px) {
   .my-work {
     text-align: center;
@@ -120,5 +131,10 @@ p {
   p,
   button {
     text-align: center;
+  }
+
+  .about-content {
+    margin: 20px;
+    margin-top: 100px;
   }
 }
