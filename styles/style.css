@@ -28,6 +28,16 @@ p {
   line-height: 1.75;
 }
 
+a {
+  color: var(--mint);
+}
+
+a:hover {
+  color: var(--mint);
+  text-decoration: none;
+  cursor: pointer;
+}
+
 nav {
   padding: 10px 0;
   position: sticky;
@@ -66,7 +76,7 @@ nav li a {
   color: rgba(34, 47, 62, 0.75);
   text-decoration: none;
   transition: all 150ms ease-in-out;
-  cursor: pointer !important;
+  cursor: pointer;
   font-weight: 500;
 }
 
@@ -147,7 +157,7 @@ nav li.active a {
 .content a:hover {
   color: var(--mint);
   text-decoration: none;
-  cursor: pointer !important;
+  cursor: pointer;
 }
 
 .portrait {
@@ -159,6 +169,34 @@ nav li.active a {
 .check-out {
   font-size: 42px;
   margin-bottom: 100px;
+}
+
+footer {
+  margin: 60px;
+}
+
+footer a {
+  font-size: 24px;
+}
+
+footer .contact-box {
+  background-color: var(--light-green);
+  border-radius: 6px;
+  padding: 50px;
+}
+
+footer .socials a {
+  margin: 0 20px;
+  font-size: 30px;
+  background: var(--light-green);
+  padding: 10px 20px;
+  border-radius: 50%;
+  transition: all 200ms ease-in-out;
+}
+
+footer .socials a:hover {
+  background-color: var(--mint);
+  color: white;
 }
 
 @media (max-width: 768px) {
@@ -181,5 +219,14 @@ nav li.active a {
   }
   nav ul li:nth-of-type(1) {
     margin-left: 0;
+  }
+
+  .contact-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-box a {
+    margin-top: 30px;
   }
 }
