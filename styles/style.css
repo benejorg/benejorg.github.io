@@ -175,14 +175,14 @@ footer {
   margin: 60px;
 }
 
-footer a {
-  font-size: 24px;
-}
-
 footer .contact-box {
   background-color: var(--light-green);
   border-radius: 6px;
   padding: 50px;
+}
+
+footer .email-link {
+  font-size: 24px;
 }
 
 footer .socials a {
