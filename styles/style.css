@@ -108,10 +108,16 @@ p {
 }
 
 .about {
-  background-color: var(--light-green);
+  padding: 160px 50px;
 }
 .about-content {
-  margin: 200px 100px;
+  margin: 30px;
+}
+
+.portrait {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
