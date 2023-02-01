@@ -17,18 +17,24 @@ h1 {
   margin-bottom: 30px;
 }
 
-h2 {
-  font-size: 26px;
-  font-weight: 400;
-}
-
 img {
   border-radius: 6px;
 }
 
+p {
+  font-size: 16px;
+  line-height: 1.75;
+}
+
 .hero {
-  background-color: #f1f8fa;
-  height: 40vh;
+  background-color: var(--light-green);
+  text-align: center;
+  padding: 160px 20px;
+}
+
+.hero h2 {
+  font-size: 26px;
+  font-weight: 400;
 }
 
 .hero p {
@@ -40,71 +46,36 @@ img {
 .button-mint {
   background-color: var(--mint);
   border: 2px solid var(--mint);
-  padding: 10px 15px;
+  padding: 10px 20px;
   border-radius: 4px;
-  margin-top: 45px;
   color: white;
   transition: all 250ms ease-in-out;
 }
 
 .button-mint:hover {
   background: transparent;
-  transform: scale(1.05);
+  transform: scale(1.02);
   color: var(--mint);
   cursor: pointer;
   border: 2px solid var(--mint);
 }
 
-.my-work p {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 0;
-  margin-top: 20px;
-}
-
-.my-work button {
+.button-mint-outline {
   background: transparent;
   border: 2px solid var(--mint);
   padding: 10px 15px;
   border-radius: 4px;
-  margin-top: 45px;
   color: var(--mint);
   transition: all 250ms ease-in-out;
 }
 
-.my-work button:hover {
+.button-mint-outline:hover {
   background-color: var(--mint);
   color: white;
 }
 
-.work-inquiry {
-  background-color: var(--light-green);
-  border-radius: 4px;
-  padding: 30px 120px;
-  height: 15vh;
-}
-
-.work-inquiry h2,
-p {
-  margin: 0;
-}
-
-.email-link {
-  color: var(--mint);
-}
-
-.email-link:hover {
-  text-decoration: none;
-}
-
-.socials a {
-  color: #222f3e;
-  transition: all 200ms ease-in-out;
-  font-size: 26px;
-}
-
-.fa-github:hover {
-  color: var(--mint) !important;
+.work-description {
+  padding-left: 30px;
 }
 
 .about {
@@ -121,26 +92,13 @@ p {
 }
 
 @media (max-width: 768px) {
-  .my-work {
-    text-align: center;
-  }
-  .my-work img {
-    display: none;
-  }
-
-  .my-work button {
-    margin-top: 15px;
-    text-align: center;
-  }
-
-  .my-work h3,
-  p,
-  button {
-    text-align: center;
-  }
-
   .about-content {
     margin: 20px;
     margin-top: 100px;
+  }
+
+  .work-description {
+    padding: 0;
+    text-align: center;
   }
 }
